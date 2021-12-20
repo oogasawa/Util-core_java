@@ -1,3 +1,14 @@
+# emacs
+*~
+
+.classpath
+.factorypath
+.project
+.settings/
+
+# maven
+target/
+
 # Compiled class file
 *.class
 
