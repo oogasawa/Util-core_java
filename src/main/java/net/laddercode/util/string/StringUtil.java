@@ -1,16 +1,6 @@
-package net.trelliscode.util.core.string;
+package net.laddercode.util.string;
 
-import java.nio.ByteBuffer;
-import java.nio.CharBuffer;
-import java.nio.charset.CharacterCodingException;
-import java.nio.charset.Charset;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CodingErrorAction;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-//import org.slf4j.LoggerFactory;
 
 public class StringUtil {
 
@@ -45,7 +35,7 @@ public class StringUtil {
         return md5.digest(str);
     }
 
-    
+
     public static String asMultiLines(String str) {
         boolean flg = false;
         StringBuilder sb = new StringBuilder();

@@ -1,4 +1,4 @@
-package net.trelliscode.util.core.string;
+package net.laddercode.util.string;
 
 
 import java.io.*;
