@@ -21,6 +21,22 @@ import java.util.zip.GZIPInputStream;
 
 public class FileIO {
 
+
+    /**  A {@code PrintWriter} to the standard output that is more efficient than {@code System.out}. */
+    public static PrintWriter stdout()  {
+        PrintWriter out = null;
+        try {
+            out = new PrintWriter(new BufferedWriter(new OutputStreamWriter(new FileOutputStream(java.io.FileDescriptor.out), "UTF-8"), 512));
+        }
+        catch (UnsupportedEncodingException ex) {
+            ex.printStackTrace();
+        }
+        return out;
+    }
+
+
+
+
     public static String readFile(BufferedReader br) throws IOException {
         StringBuffer buf = new StringBuffer();
         String line = null;
